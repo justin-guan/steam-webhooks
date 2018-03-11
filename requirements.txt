@@ -1,0 +1,16 @@
+attrs==17.4.0
+certifi==2018.1.18
+chardet==3.0.4
+idna==2.6
+mock==2.0.0
+pbr==3.1.1
+pluggy==0.6.0
+polling==0.3.0
+psycopg2==2.7.4
+py==1.5.2
+pytest==3.4.1
+requests==2.18.4
+six==1.11.0
+urllib3==1.22
+virtualenv==15.1.0
+virtualenv-clone==0.3.0
