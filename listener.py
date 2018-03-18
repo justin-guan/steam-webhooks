@@ -13,6 +13,10 @@ def _send_webhook_update(data):
         print(error)
 
 
+def _is_relevant_feed(feedname):
+    return feedname == 'steam_updates' or feedname == 'steam_community_announcements' or feedname == 'steam_release'
+
+
 class ApiPoller(threading.Thread):
     database = None
     last_seen_id = 0  # gid
@@ -73,4 +77,4 @@ class ApiPoller(threading.Thread):
         gid = latest_update_item['gid']
         date = latest_update_item['date']
         feedname = latest_update_item['feedname']
-        return self.last_seen_date < date and self.last_seen_id != gid and feedname == 'steam_updates'
+        return self.last_seen_date < date and self.last_seen_id != gid and _is_relevant_feed(feedname)
