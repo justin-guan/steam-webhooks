@@ -58,7 +58,7 @@ class DatabaseHandler:
                 raise LookupError("Expected a single last seen result from query for appid %s "
                                   "but found %s instead",
                                   [appid, num_rows])
-            if num_rows is 0:
+            if num_rows == 0:
                 return appid, 0, 0
             return rows[0]
         except psycopg2.DatabaseError as error:
