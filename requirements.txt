@@ -8,6 +8,7 @@ pluggy==0.6.0
 polling==0.3.0
 psycopg2==2.7.4
 py==1.10.0
+python==3.9.5
 pytest==3.4.1
 requests==2.18.4
 six==1.11.0
