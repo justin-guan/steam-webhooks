@@ -11,6 +11,6 @@ pytest==3.4.1
 psycopg2-binary==2.8.6
 requests==2.20.0
 six==1.11.0
-urllib3==1.24.2
+urllib3==1.26.5
 virtualenv==15.1.0
 virtualenv-clone==0.3.0
